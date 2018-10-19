@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>用户自定义布局</title>
+    <link href="layui/css/layui.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-warpper">
+        <div class="header">
+            <h1>可视化布局</h1>
+            <div class="layui-btn-group header-nav">
+                <button class="layui-btn layui-btn-sm" id="editing-btn">编辑</button>
+                <button class="layui-btn layui-btn-sm">下载</button>
+                <button class="layui-btn layui-btn-sm" id="preview-btn">预览</button>
+            </div>
+        </div>
+        <div class="main">
+            <!--编辑区-->
+            <div class="editing-area">
+                <div class="control-panel">
+                    <p class="layout-group choose-group">布局设置</p>
+                    <ul class="option layout-option">
+                        <li class="layout-12 add-layout-btn add-btn" id="layout-btn-12">12</li>
+                        <li class="layout-6-6 add-layout-btn add-btn" id="layout-btn-6-6">6 6</li>
+                        <li class="layout-8-4 add-layout-btn add-btn" id="layout-btn-8-4">8 4</li>
+                        <li class="layout-4-4-4 add-layout-btn add-btn" id="layout-btn-4-4-4">4 4 4</li>
+                        <li class="layout-2-6-4 add-layout-btn add-btn" id="layout-btn-2-6-4">2 6 4</li>
+                    </ul>
+                    <p class="assembly-group choose-group">组件</p>
+                    <ul class="option">
+                        <li class="add-assembly-btn add-btn" id="assembly-btn-text">文本框</li>
+                        <li class="add-assembly-btn add-btn" id="assembly-btn-select">选择框</li>
+                        <li class="add-assembly-btn add-btn" id="assembly-btn-checkbox">复选框</li>
+                        <li class="add-assembly-btn add-btn" id="assembly-btn-radio">单选框</li>
+                    </ul>
+                </div>
+                <div class="editing-box">
+                    <div class="content-warpper">
+                        <div class="title-wrapper">
+                            <span class="box-title">Container</span>
+                            <!--删除模板-->
+                            <div class="layout-control-model control-model" style="display:none;">
+                                <span class="delete">删除</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--预览区-->
+            <div class="preview-area">
+                预览区
+            </div>
+            <div class="assembly-choose">
+                <div class="text assembly">
+                    <div class="assembly-control-model control-model">
+                        <span class="edit edit-text">编辑</span>
+                        <span class="delete">删除</span>
+                    </div>
+                    <label class="">文本框</label>
+                    <input type="text" name="" value="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="layui/layui.all.js"></script>
+<script src="js/index.js"></script>
+
+</html>

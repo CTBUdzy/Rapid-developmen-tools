@@ -1,0 +1,242 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main-warpper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/*头部样式*/
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #aaa;
+    z-index: 1000;
+    background: #111;
+    color: aliceblue;
+}
+
+.header h1 {
+    display: inline-block;
+    margin-left: 1em;
+    margin-right: 2em;
+}
+
+.header .header-nav {
+    position: relative;
+    top: -5px;
+}
+
+
+/*主体内容区*/
+
+.main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.main>div {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*选择控件面板*/
+
+.control-panel {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 100%;
+    width: 165px;
+    padding-top: 5px;
+    background: #ccc;
+}
+
+.choose-group {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5em;
+    padding: 5px;
+    background: #aaa;
+    font-weight: 700;
+    color: #eee;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.option li {
+    text-indent: 0.5em;
+    padding: 3px;
+    display: inline-block;
+    width: 70%;
+    border-radius: 5px;
+    margin: 5px;
+    margin-left: 1.5em;
+    background: #bbb;
+    cursor: pointer;
+}
+
+.option .active {
+    background: rgb(120, 196, 236);
+    color: #fff;
+}
+
+
+/*
+.layout-option li {
+    display: inline-block;
+    width: 70%;
+    border-radius: 5px;
+    margin: 5px;
+    margin-left: 1.5em;
+    background: #bbb;
+    cursor: pointer;
+}
+*/
+
+
+/*编辑内容面板样式*/
+
+.editing-box {
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    left: 170px;
+    box-sizing: border-box;
+    height: 95%;
+    max-height: 100%;
+    padding: 10px;
+    width: calc(100% - 170px);
+}
+
+.content-warpper {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.container-header {}
+
+.box-title {
+    color: #999;
+    display: inline-block;
+    line-height: 1.6em;
+    height: 1.5em;
+    font-size: 6px;
+    padding: 0px 3px;
+    font-weight: 700;
+    border: 1px solid #ccc;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background: #eee;
+}
+
+
+/*设置编辑模块样式*/
+
+.model-row {
+    position: relative;
+    width: calc(100% - 20px);
+    min-height: 82px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid #aaa;
+    background: #eee;
+    border-radius: 5px;
+}
+
+.model-column {
+    display: inline-block;
+    /*    min-width: calc(50% - 24px);*/
+    vertical-align: top;
+    min-height: 82px;
+    margin: 3px;
+    padding-bottom: 5px;
+    box-sizing: padding-box;
+    border: 1px solid #aaa;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.control-model {
+    position: absolute;
+    display: inline-block;
+    right: 0.5em;
+    top: 1px;
+}
+
+.control-model .delete {
+    background: #ccc;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: rgb(243, 172, 176);
+    cursor: pointer;
+}
+
+.control-model .delete:hover {
+    background: #aaa;
+    color: rgb(243, 50, 50);
+}
+
+
+/*设置预览样式*/
+
+.preview-row {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    border: none;
+}
+
+.preview-column {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: padding-box;
+    background: #fff;
+    border: none;
+}
+
+.assembly-control-model {
+    width: 100%;
+    text-align: right;
+}
+
+.assembly {
+    position: relative;
+    padding-top: 1.8em;
+}
+
+.preview-assembly {
+    padding-top: 0em;
+    padding: 10px 0px;
+}
+
+.edit {
+    background: #ddd;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: rgb(120, 196, 226);
+    cursor: pointer;
+}
+
+.edit:hover {
+    background: #bbb;
+    color: rgb(80, 150, 226);
+}
